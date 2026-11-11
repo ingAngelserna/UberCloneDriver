@@ -1,16 +1,9 @@
-
 import React, { useContext } from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import PersonalDataScreen from '../screens/PersonalDataScreen';
 import VehicleScreen from '../screens/VehicleScreen';
-import { View, Text } from 'react-native';
+import DocumentsScreen from '../screens/DocumentsScreen'; // <- Aquí importamos la pantalla de documentos real
 import { LanguageContext } from '../context/LanguageContext';
-
-const DocumentsScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Pestaña de Documentos</Text>
-  </View>
-);
 
 const Tab = createBottomTabNavigator();
 
